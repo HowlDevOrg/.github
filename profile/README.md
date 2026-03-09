@@ -18,4 +18,4 @@ Generally, tasks will be created (and pull requests submitted) for known bugs/fe
 
 At that point, the code has a shape and it's where I'm somewhat happy with it, so everything beyond that is just improvement. 
 
-You can find information and more of my work at [https://wiki.codyhowell.dev/]. 
+You can find information and more of my work at [my wiki](https://wiki.codyhowell.dev/). 
