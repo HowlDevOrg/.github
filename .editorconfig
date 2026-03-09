@@ -1,3 +1,5 @@
+# Formatting: dotnet format --exclude-diagnostics IDE0130
+
 # Remove the line below if you want to inherit .editorconfig settings from higher directories
 root = true
 
@@ -247,18 +249,24 @@ dotnet_diagnostic.IDE0003.severity = error
 # Unused usings
 dotnet_diagnostic.IDE0005.severity = error
 # Prefer strong types
-dotnet_diagnostic.IDE0008.severity = suggest
-dotnet_diagnostic.IDE0008.severity = error, public
+dotnet_diagnostic.IDE0008.severity = suggestion
 # Collection simplification
 dotnet_diagnostic.IDE0028.severity = warning
+dotnet_diagnostic.IDE0047.severity = warning
 dotnet_diagnostic.IDE0300.severity = warning
 dotnet_diagnostic.IDE0301.severity = warning
 dotnet_diagnostic.IDE0306.severity = warning
+# File scoped namespaces
+dotnet_diagnostic.IDE0161.severity = error
+# Use range operator
+dotnet_diagnostic.IDE0057.severity = error
+# Unnecessary assignment
+dotnet_diagnostic.IDE0059.severity = warning
 # Remove unreachable code
 dotnet_diagnostic.IDE0035.severity = error
 dotnet_diagnostic.CS0162.severity = error
-# Collection simplification
-dotnet_diagnostic.IDE0047.severity = warning
+# Simplify lambda expressions
+dotnet_diagnostic.IDE0350.severity = warning
 # Use HashCode Combine
 dotnet_diagnostic.IDE0070.severity = error
 # Use not operator
@@ -286,6 +294,10 @@ dotnet_diagnostic.CA1805.severity = warning
 dotnet_diagnostic.CA1815.severity = error
 # Tamper proof array properties
 dotnet_diagnostic.CA1819.severity = error
+# Adjust return type for performance
+dotnet_diagnostic.CA1859.severity = error
+# Use char literals when available
+dotnet_diagnostic.CA1866.severity = error
 # Make things static
 dotnet_diagnostic.CA1822.severity = warning
 # Unused private
@@ -301,8 +313,16 @@ dotnet_diagnostic.CA1864.severity = error
 dotnet_diagnostic.CA1860.severity = error
 # Better Logging statements
 dotnet_diagnostic.CA1873.severity = error
+# Public properties in static classes should be const
+dotnet_diagnostic.CA2211.severity = warning
+# XML comments
+dotnet_diagnostic.CS1591.severity = warning
 
 
-# [*[Tt]est{,s}.cs]
-# # Don't make things static
-# dotnet_diagnostic.CA1822.severity = none
+# dotnet_diagnostic.severity = error
+
+[*[Tt]est{,s}.cs]
+# Don't make things static
+dotnet_diagnostic.CA1822.severity = none
+# Namespace should match folder structure
+dotnet_diagnostic.IDE0130.severity = none
