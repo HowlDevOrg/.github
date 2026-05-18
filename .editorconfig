@@ -274,7 +274,7 @@ dotnet_diagnostic.IDE0083.severity = error
 # Namespace should match folder structure
 dotnet_diagnostic.IDE0130.severity = error
 # Space after closing brace
-dotnet_diagnostic.IDE2003.severity = error
+dotnet_diagnostic.IDE2003.severity = warning
 # Use length instead
 dotnet_diagnostic.CA1829.severity = warning
 # Make namespaces
@@ -314,7 +314,8 @@ dotnet_diagnostic.CA1860.severity = error
 # Better Logging statements
 dotnet_diagnostic.CA1873.severity = error
 # Public properties in static classes should be const
-dotnet_diagnostic.CA2211.severity = warning
+# (or basically be aware of static properties to make easier tests)
+dotnet_diagnostic.CA2211.severity = error
 # XML comments
 dotnet_diagnostic.CS1591.severity = warning
 

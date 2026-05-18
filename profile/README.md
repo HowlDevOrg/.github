@@ -13,9 +13,13 @@ HowlDev is a collection of libraries mostly started by Cody Howell. I use librar
 - Compression
   - Includes frontend/backend handshakes
 
-There are currently no constributors. If you would like to contribute, there are tasks that cover all my libraries in an single project in the .github repository. 
+There are currently no contributors. If you would like to contribute, there are tasks that cover all my libraries in an single project in the .github repository. 
 Generally, tasks will be created (and pull requests submitted) for known bugs/features that will be added to a library after version 1.0 has been published. 
 
 At that point, the code has a shape and it's where I'm somewhat happy with it, so everything beyond that is just improvement. 
 
 You can find information and more of my work at [my wiki](https://wiki.codyhowell.dev/). 
+
+[For the current version of the .editorconfig, click here](https://github.com/HowlDevOrg/.github/blob/main/.editorconfig).
+
+[For the current schema of my C# and JS libraries, click here](https://github.com/HowlDevOrg/.github/blob/main/schema.md).
